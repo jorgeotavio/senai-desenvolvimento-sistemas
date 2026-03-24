@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 12px;
+
+        }
+        td {
+            border: 1px solid #ccc;
+            min-width: 100px;
+        }
+        .bg-active {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>AND</th>
+                <th>OR</th>
+                <th>(p && q) || q</th>
+                <th>(p || q) && (p && q)</th>
+                <th>(q && p) && !p </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Verdadeiro</td>
+                <td>Verdadeiro</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Verdadeiro</td>
+                <td>Falso</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td ></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Falso</td>
+                <td>Verdadeiro</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Falso</td>
+                <td>Falso</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+        
+
+    </script>
+    <!-- <h2>((TRUE and FALSE) and TRUE) or (!TRUE and FALSE) = FALSE </h2>
+    <h2>(!(TRUE and FALSE) and TRUE) or !(TRUE and FALSE) = ... </h2> -->
+</body>
+</html>
