@@ -1,11 +1,20 @@
+def  get_temperatura_da_piscina():
+    return 45
+
+temperatura_da_piscina = get_temperatura_da_piscina()
+
 temperatura_ideal = 30
-margem = 2
+margem_de_erro = 2
 
-temperatura = float(input("Informe a temperatura da piscina: "))
+esta_fria = temperatura_da_piscina < (temperatura_ideal - margem_de_erro)
+esta_quente = temperatura_da_piscina > (temperatura_ideal + margem_de_erro)
 
-if temperatura < temperatura_ideal - margem:
-    print("Temperatura baixa. Ligar aquecedor.")
-elif temperatura > temperatura_ideal + margem:
-    print("Temperatura alta. Desligar aquecedor ou resfriar.")
+temperatura_esta_ideal = not esta_fria and not esta_quente
+
+if temperatura_esta_ideal:
+    print('Nao faz nada')
+elif esta_fria:
+    print('Esquento')
 else:
-    print("Temperatura ideal.")
+    print('Esfria')
+

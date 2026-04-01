@@ -22,18 +22,39 @@ def sortear_grupos(nomes, tamanho_grupo=3):
 
 
 nomes = [
-    "Ana", "Bruno", "Carlos", "Daniela",
-    "Eduardo", "Fernanda", "Gabriel",
-    "Helena", "Igor", "Juliana"
+    "Sid",
+    "Higor",
+    "Juliana",
+    "Cibely",
+    "Geovana",
+    "Graziela",
+    "Pedro",
+    "Francinelma",
+    "Neilma",
+    "Joel",
+    "Emily",
 ]
+
+# len função do python que quantifica o total de elementos em uma string ou array
+
+nomes.append("Alexandre")
+
+# nomes[0] = "Leonardo"
 
 grupos, selecionados = sortear_grupos(nomes, 3)
 
 sorteado = 1
 for i, grupo in enumerate(grupos, 1):
-    print(f"Sorteando grupo {sorteado}")
+    print(f"Sorteando grupo {i}")
     time.sleep(5)
     print(f"Grupo {i} sorteado: {grupo}")
 
 print("\nPessoas já selecionadas:")
 print(selecionados)
+
+
+# https://youtu.be/888vbCs9wLY?si=U8mUGgfLLi-eF-rb
+
+# https://youtu.be/FVFMQjuLXd4?si=gMVrJMzeA_OICk2D
+
+# https://youtu.be/05bjf7Y1mQo?si=hZ2naE4miOg4HPIk

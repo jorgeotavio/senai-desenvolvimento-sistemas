@@ -21,7 +21,7 @@ while (indicator < 2) {
 
 
 function getTemperaturaDaPiscina () {
-    return 30
+    return 45
 }
 
 
