@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .borda-colorida {
+            border-color: green !important;
+        }
+
+        .borda-colorida {
+            border-color: blue;
+        }
+
+        .borda-colorida {
+            border-color: red;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" class="user">
-    <input type="password" class="pass">
-    <button onclick="enviar()">enviar</button>
+    <div class="main">
+        <div class="campo-user">
+            <input type="text" class="borda-colorida">
+        </div>
+        <div class="campo-pass">
+            <input type="password" class="borda-colorida">
+        </div>
+        <div class="campo-submit">
+            <button class="borda-colorida" onclick="enviar()">enviar</button>
+        </div>
+    </div>
+
     <script>
+
         function enviar(){
             let user = document.querySelector('.user').value
             let pass = document.querySelector('.pass').value
